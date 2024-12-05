@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Egalitarianism Hub</title>
     <style>
-        {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -169,7 +169,6 @@
             transition: all 0.3s ease;
         }
 
-        /* New hover effect for card images */
         .service-card:hover img {
             transform: scale(1.05);
             filter: brightness(1.1);
@@ -221,12 +220,23 @@
             bottom: 0;
             width: 100%;
             flex-shrink: 0;
-            transition: all 0.3s ease; /* Added transition */
+            transition: all 0.3s ease;
         }
 
         footer:hover {
             background-color: #2c3e50;
             color: #45a29e;
+        }
+
+        .social-icon {
+            width: 24px; /* Adjust size as needed */
+            height: 24px;
+            margin: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -247,6 +257,8 @@
             <li><a>About</a>
                 <div class="dropdown">
                     <p>This website is dedicated to raising awareness about gender equality issues and promoting solutions for a more equitable society.</p>
+                </div>
+            </li>
             <li>
                 <a>Features</a>
                 <div class="dropdown">
@@ -256,13 +268,18 @@
                     <a href="HTMLS/Solutions.html">Solutions</a>
                     <a href="HTMLS/References.html">References</a>
                 </div>
+            </li>
             <li>
                 <a>Contact</a>
                 <div class="dropdown">
                     <a>Email: ivygrace.sanchez@smc.pshs.edu.ph</a>
                     <a>Phone: +63 (998) 546-0128</a>
-                    <a>Facebook: Ivy Sanchez</a>
-                    <a>Instagram: iv.sanchezz</a>
+                    <a href="https://www.facebook.com/yourprofile" target="_blank">
+                        <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">
+                        <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+                    </a>
                 </div>
             </li>
         </ul>
@@ -285,7 +302,7 @@
         <div class="service-card">
             <img src="images/povs.png" alt="POV's"> 
             <h3>POV's</h3>
-            <p> Different people's perspectives on gender equality are here!</p>
+            <p>Different people's perspectives on gender equality are here!</p>
             <a href="HTMLS/POV's.html">Read More</a>
         </div>
         <div class="service-card">
