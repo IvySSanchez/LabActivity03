@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egalitarianism Hub</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, sans-serif;
+            background-color: #f0e5cf;
+            color: #3c3c3c;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f2833;
+            color: #66fcf1;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 85px; 
+            height: auto;
+            margin-right: 10px; 
+        }
+
+        nav {
+            background-color: #45a29e;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            position: relative; 
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative; 
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e67e22; 
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            display: none; 
+            position: absolute; 
+            background-color: #34495e;
+            min-width: 220px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1; 
+            padding: 10px; 
+        }
+
+        .dropdown p {
+            color: white; 
+            margin: 0; 
+            padding: 5px 0; 
+            text-align: justify;
+        }
+
+        .dropdown a {
+            display: block; 
+            color: white; 
+            padding: 8px 12px; 
+            text-decoration: none; 
+        }
+
+        .dropdown a:hover {
+            background-color: #e67e22; 
+        }
+
+        nav ul li:hover .dropdown {
+            display: block; 
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: center;
+            margin: 40px auto;
+            width: 80%;
+            margin-bottom: 60px; 
+        }
+
+        .service-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 800px; 
+            margin: 15px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 300px;
+            border-radius: 5px; 
+            object-fit: cover; 
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            margin: 15px 0;
+            font-size: 2em; 
+        }
+
+        .service-card p {
+            font-size: 1.2em; 
+            margin-bottom: 20px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #1f2833;
+            color: #66fcf1;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo"> 
+            Egalitarianism Hub
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="../Egalitarianism Hub.html">Home</a></li>
+            <li><a>About</a>
+                <div class="dropdown">
+                    <p>This website is dedicated to raising awareness about gender equality issues and promoting solutions for a more equitable society.</p>
+                </div>
+            </li>
+            <li>
+                <a>Features</a>
+                <div class="dropdown">
+                    <a href="../HTMLS/Issues.html">Issues</a>
+                    <a href="../HTMLS/Articles.html">Articles</a>
+                    <a href="../HTMLS/POV's.html">POV's</a>
+                    <a href="../HTMLS/Solutions.html">Solutions</a>
+		    <a href="../HTMLS/References.html">References</a>
+                </div>
+            </li>
+            <li>
+                <a>Contact</a>
+                <div class="dropdown">
+                    <a>Email: ivygrace.sanchez@smc.pshs.edu.ph</a>
+                    <a>Phone: +63 (998) 546-0128</a>
+                    <a>Facebook: Ivy Sanchez</a>
+                    <a>Instagram: iv.sanchezz</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card">
+            <img src="../images/solutions.png" alt="Issues"> <!-- Replace with your image -->
+            <h3>Solutions</h3>
+	    <h4> Ways to promote gender equality in daily life </h4>
+	    <p>#1. Help individual women succeed. </p>
+        	<p>According to a report by Kiva and USAID on global gender lens investing, over a billion women around the world are excluded from financial systems. Financial inclusion can help increase women's incomes, which can lead to increases in household spending on food and education and an improved quality of life. Promoting financial inclusion among women can help provide women with the opportunities to start businesses, get an education, and increase their independence and agency. It is a practice that helps one woman at a time gain traction to improve their lives while creating benefits that reverberate throughout communities. More than 80 percent of Kiva loans go to women, many of whom live in developing countries. These loans are facilitated through the work of on-the-ground lending partners like Caurie Microfinance, working to bring their services to women living in remote locations. Based in Senegal, Caurie has raised over US$23.5 million in loans for women, not only disbursing funds but also developing improved tech and mobile platforms that make it possible for its clients to repay loans, conduct transactions, and save money without having to travel to a branch office. Other Kiva lending partners often include business training, healthcare access, and wraparound services that help individual women succeed.</p>
+
+	    <p>#2. Discuss gender equality with family members and children.</p>
+        	<p>In many developed countries and societies, it can be tempting to take women's freedom for granted. Yet there is still a tremendous chasm to cross in order to achieve gender equality around the world — and closer to home. Talk about the ways women continue to be underrepresented in government and commerce and the positive potential impact of closing the gender gap. </p>
+
+	    <p>#3. Encourage financial inclusion.</p>
+        	<p>Over a billion women are excluded from traditional banking services such as credit, savings, and money transfers that foster independence. More than 70 percent of women-owned small and medium-sized enterprises (SMEs) have inadequate access to financial services like banking and credit, many with no access at all. Often they don't have access to these services because of social barriers and systemic poverty — even in developed countries like the U.S. Making microloans through organizations like Kiva helps women access capital to build credit, start businesses, fund education for themselves and their daughters, and support gender equality. </p>
+
+	    <p>#4. Support women-owned businesses.</p>
+        	<p>Where we choose to spend our money matters. Seeking out small businesses owned by women directly supports them and their families or communities. It also improves local economies and surrounding communities: Studies show that women-owned companies are more likely to create jobs in healthcare, food services, and other social sector industries than those owned by men. Seeking out women-owned companies and small businesses in your area is an effective way not only to support gender equality but also to help your community — for every dollar spent at a small business, 67 cents remains in local circulation. </p>
+
+	     <p>#5. Shop from companies and businesses that promote gender equality.</p>
+        	<p>Across corporations and industries, statistics show the positive effects of including women in executive leadership positions: </p> 
+
+		<li>Executive teams that are gender-diverse generate better financial performance</li>
+		<li>Value chains that are gender-diverse are more agile and create new business opportunities</li>
+		<li>Diversity leads to improved decision-making</li>
+
+		<p> There is so much power in how we spend our dollars — and where we don't. There are dozens of big corporations making huge strides in equalizing the workplace for all their employees, with a few global titans leading the way. Make a habit of researching where your dollars are going before making big purchases so you can be sure you're shopping from companies you feel good about supporting.</p>
+
+	     <p>#6. Promote gender equality at home. </p>
+        	<p>Encourage the fair division of labor for household chores. Everyone is capable of contributing to the cooking, cleaning, childcare, and other unpaid labor it takes to keep a home and family. Not only does sharing the load between women and men break down stereotypes, it also makes caring for a household easier — many hands make light work. </p>
+
+	     <p>#7. Keep in mind that gender is not the same as biological sex. </p>
+        	<p>While someone's biological sex refers strictly to biology, gender covers a host of social constructs and expectations that comprise an individual's identity. Even if a person was not born 'female', if they identify as a woman, as gender-diverse, or as non-binary, they will face social and economic risks even greater than those that people born female do. It's important to keep in mind that these groups need even more support and consideration when discussing gender equality.</p>
+
+	     <p>#8. Speak out against gender-based violence.</p>
+        	<p>Almost one in three women and girls have experienced physical and/or emotional abuse in their lifetime, most often at the hands of a spouse, partner, or relative. Lower-income women are at the highest risk for violence against women, and a lack of reporting violent acts, due to lack of safety and trust with current systems, affects women across all economic and social strata. </p> 
+
+	     <p>#9. Check your bias. </p>
+        	<p>Many people don't realize the implicit ways they have internalized cultural biases of gender and race, which can affect all levels of the workplace. Many employers provide implicit bias training to help dissipate unconscious perceptions. </p>  
+
+	     <p>#10. Use gender-inclusive language.</p>
+        	<p>Referring to workers as 'individuals'; rather than as 'men' or 'women' in job descriptions, employee handbooks, and other company materials decreases bias, even — especially — in roles that have traditionally been held by one particular gender. </p>
+
+	     <p>#11. Advocate for equity.</p>
+        	<p>Addressing the places and issues within company culture that create barriers for women and non-binary employees brings attention to where the work needs to be done. Often, leadership needs to be made aware of gender disparity before anything can change. </p>
+
+   	     <p>#12. Ask for better.</p>
+        	<p>Flexible hours, paid family and medical leave, and even offering childcare benefits are ways that some companies are creating a more equitable environment for working mothers (and parents in general!). </p>
+
+	     <p>#13. Focus on performance.</p>
+        	<p>When it comes to promoting gender equality in the workplace, the best way to close the gap is to reward those who create results, bring in revenue, and achieve company goals —regardless of any perceived notions of their abilities. </p>
+
+	     <p>#14. Listen and learn. </p>
+        	<p>All of us stand on the shoulders of those who have been doing the work of advocating for gender equality for generations. Read fundamental materials by organizations to understand the progress as well as the pitfalls that have been made. Seek out the past and present leaders of the movement, and have faith in yourself as a future leader. </p>
+
+	     <p>#15. Educate others. </p>
+        	<p>Share what you know in private conversations and public forums. Use facts, statistics, and relevant anecdotes to make your case. While it's not always easy to remain patient with those who don't agree, and it is first and foremost an individual responsibility to educate ourselves, sticking to the point that gender equality improves life for everyone can help diffuse uncomfortable conversations. </p>
+
+	     <p>#16. Become an activist. </p>
+        	<p>It is projected that it will take another 132 years for the world to achieve gender equality, but we can speed things up by getting involved. Make sure policymakers at local, regional, national, and international levels know that creating opportunities for women is the way to improve economies. Present gender equality issues as front and center for elections, and grill candidates on their positions. Better yet, run for office yourself!</p>
+
+	     <p>#17. Support reproductive freedom.</p>
+        	<p>Access to healthcare and sex education, including birth control and the right to choose when and if a woman wants to have children and how many, are a vital pillar of gender equality. Economic development, educational opportunities, and social progress depend on the right of women to control their bodies. </p>
+
+	     <p>#18. Make sure learning materials represent everyone. </p>
+        	<p>The selection of books, references, and other resources for a class can draw from a diverse group of authors. When the subject matter precludes the inclusion of women or non-binary contributors, address the reasons why that particular resource may not have favored such diversity. </p>
+
+	     <p>#19. Stick with gender-inclusive language. </p>
+        	<p>As in everyday life and in the workplace, the use of gender-inclusive language in the classroom is an important way to ensure everyone feels supported. The use of 'you guys' and 'ladies and gentlemen' in the classroom favor traditional gender roles and binaries and can make young women and non-binary students feel excluded. When speaking to a group, the use of 'students', 'class', or even 'you all' are worthy gender-inclusive alternatives. </p>
+
+	     <p>#20. Challenge gender stereotypes. </p>
+        	<p>While teaching anything from math to writing to science, choose examples that go against staid perceptions of gender: Women construction workers, stay-at-home dads — showing people of all genders in various roles helps students realize they need not be limited by anything. </p>
+
+	     <p>#21. Respect preferred pronouns.</p>
+        	<p>When a young person expresses their wish to be referred to by a specific pronoun, honoring that wish affirms the student's identity to others and promotes gender equality in the classroom.</p>
+
+	     <p>#22. Help fund education for girls. </p>
+        	<p>While women have now surpassed men in the U.S. for college graduation rates, in many places around the world, social norms prevent young women from pursuing college degrees or advanced training. Kiva helps women-identified students crowdsource tuition and living expenses from lenders all over the world, enabling them to advance their opportunities. </p>
+
+             <p>#23. Be a fan. </p>
+        	<p>Support women's and girls' athletic teams by watching games in person or on television, following their social media, buying season passes, and sporting their merch. This goes for professional, international, and college-level teams as well as high school and younger —cheering from the sidelines encourages young players to stick with it. </p>
+
+             <p>#24. Be a player. </p>
+        	<p>Not everyone has the prowess to pursue professional sports, but there are plenty of local, low-key athletic opportunities for women of all ages. Even if it's a workplace softball team or helping coach a kindergarten soccer team, women's presence matters at every level. </p>
+
+	     <p>#25. Demand better policy. </p>
+        	<p>While gender equality is finally getting attention at the professional level, there is plenty of room for improvement in school and recreational sports organizations. Women and girls deserve equal consideration when it comes to financial aid, funding and participation opportunities. </p>
+
+	     <p>#26. Protect whistleblowers.</p>
+        	<p>Coming forward with examples of gender inequality, discrimination, and sexual harassment is courageous and often the only way to move the needle towards equality. Help establish anonymous programs to report such instances and protect privacy. </p>
+
+	     <p>#27. Use appropriate language. </p>
+        	<p>When speaking or writing about women's sports, focus on skills and performance, not the way uniforms fit or what an athlete does in their private life. Achieving gender equality in sports depends on all athletes receiving the same kinds of respectful treatment from the media, fans, coaches, industry executives, and other players. </p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>©2024 Egalitarianism Hub. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
