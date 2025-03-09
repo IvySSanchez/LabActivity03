@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egalitarianism Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, sans-serif;
+            background-color: #f0e5cf;
+            color: #3c3c3c;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f2833;
+            color: #66fcf1;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 85px; 
+            height: auto; 
+            margin-right: 10px; 
+        }
+
+        nav {
+            background-color: #45a29e;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            position: relative; 
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative; 
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e67e22;
+        }
+
+        .dropdown {
+            display: none; 
+            position: absolute;
+            background-color: #34495e; 
+            min-width: 220px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1; 
+            padding: 10px; 
+        }
+
+        .dropdown p {
+            color: white; 
+            margin: 0;
+            padding: 5px 0; 
+            text-align: justify;
+        }
+
+        .dropdown a {
+            display: block;
+            color: white; 
+            padding: 8px 12px;
+            text-decoration: none; 
+        }
+
+        .dropdown a:hover {
+            background-color: #e67e22; 
+        }
+
+        nav ul li:hover .dropdown {
+            display: block; 
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            margin: 40px auto;
+            width: 80%;
+            margin-bottom: 60px; 
+        }
+
+        .service-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 100%; 
+            max-width: 800px;
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+        }
+
+        .service-card img {
+            width: 100%; 
+            height: 300px; 
+            border-radius: 5px;
+            object-fit: cover; 
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            margin: 15px 0;
+            font-size: 2em;
+        }
+
+        .service-card p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #1f2833;
+            color: #66fcf1;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo"> 
+            Egalitarianism Hub
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="../Egalitarianism Hub.html">Home</a></li>
+            <li><a>About</a>
+                <div class="dropdown">
+                    <p>This website is dedicated to raising awareness about gender equality issues and promoting solutions for a more equitable society.</p>
+                </div>
+            </li>
+            <li>
+                <a>Features</a>
+                <div class="dropdown">
+                    <a href="../HTMLS/Issues.html">Issues</a>
+                    <a href="../HTMLS/Articles.html">Articles</a>
+                    <a href="../HTMLS/POV's.html">POV's</a>
+                    <a href="../HTMLS/Solutions.html">Solutions</a>
+                    <a href="../HTMLS/References.html">References</a>
+                    <a href="../HTMLS/Quiz.html">Quiz</a>
+                </div>
+            </li>
+            <li>
+                <a>Contact</a>
+                <div class="dropdown">
+                    <a>Email: ivygrace.sanchez@smc.pshs.edu.ph</a>
+                    <a>Phone: +63 (998) 546-0128</a>
+                    <a>Facebook: Ivy Sanchez</a>
+                    <a>Instagram: iv.sanchezz</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card">
+            <img src="../images/references.png" alt="References"> 
+            <h3>References</h3>
+	   
+            <p> Images:</p>
+	    <li> Issues - Pioneer, D. (2019, December 30). In pursuit of gender equality. The Pioneer. https://www.dailypioneer.com/2019/columnists/in-pursuit-of-gender-equality-in-pursuit-of-gender-equality.html</li>
+	    <li> Articles - Unsplash. (n.d.). 20+ newspaper pictures | Download free images on Unsplash. Unsplash. https://unsplash.com/s/photos/newspaper</li>
+            <li> POV's - Wakefield, S. (2024, September 2). How to choose the best point of view for your novel: understanding narrator perspectives in books. The Book Coach. https://www.thebookcoach.co/post/how-to-choose-the-best-point-of-view-for-your-novel</li>
+            <li> Solutions - Iwda, & Iwda. (2019, April 11). 2019: The feminist year ahead | IWDA. IWDA. https://iwda.org.au/2019-the-feminist-year-ahead/</li>
+            <li> References - Lewton, A. (2021, March 25). Comprehensive Candidate Screening – Effective Reference Checks - KiDCheck. KidCheck. https://www.kidcheck.com/blog/effective-reference-checks/</li>
+            
+            <h3> </h3>
+            <p> Issues: </p>
+	    <li> Soken-Huberty, E. (2023, February 11). 15 gender issues we must address. Human Rights Careers. https://www.humanrightscareers.com/issues/gender-issues/</li>
+
+	    <h3></h3>
+	    <p> Articles: </p>
+	    <li> Subramaniam, T. (2023, March 7). Gender equality will take 300 years to achieve, UN chief warns. CNN. https://edition.cnn.com/2023/03/07/world/un-gender-equality-300-years-intl-hnk/index.html</li>
+
+	    <li> Press release: The world is failing girls and women, according to new UN report | UN Women – Headquarters. (2023, September 7). UN Women – Headquarters. https://www.unwomen.org/en/news-stories/press-release/2023/09/press-release-the-world-is-failing-girls-and-women-according-to-new-un-report</li>
+ 	    <li> Gender inequality around the world in 2024: special report. (n.d.). Focus 2030. https://focus2030.org/Gender-inequality-around-the-world-in-2024-special-report</li>
+
+	    <li> Gender equality: the route to a better world. (2023). Nature, 621(7977), 8. https://doi.org/10.1038/d41586-023-02745-9</li>
+
+	    <li> The 11 biggest hurdles for women’s equality by 2030 | UN Women – Headquarters. (2023, September 7). UN Women – Headquarters. https://www.unwomen.org/en/news-stories/feature-story/2023/09/the-11-biggest-hurdles-for-womens-equality-by-2030</li>
+
+	    <li> World Bank Group. (2024). World Bank Group Gender Strategy 2024 – 2030: Accelerate Gender Equality to End Poverty on a Livable Planet. In World Bank. https://www.worldbank.org/en/topic/gender/brief/gender-strategy-update-2024-30-accelerating-equality-and-empowerment-for-all</li>
+
+	    <li> Gender Equality Index 2024. (2024, June 5). European Institute for Gender Equality. https://eige.europa.eu/about/projects/gender-equality-index-2024?language_content_entity=en</li>
+
+	    <li> Advancing gender equality in the Philippines. (2023, November 7). KPMG. https://kpmg.com/ph/en/home/insights/2023/11/advancing-gender-equality-in-the-philippines.html</li>
+
+	    <li> International Women’s Day: How the world is progressing on gender equality across all 17 SDGs. (2024, September 10). World Economic Forum. https://www.weforum.org/agenda/2024/03/iwd24-gender-equality-sdgs/</li>
+
+	    <li> Schmitz, C. L., & Gabel, S. G. (2023). Women, human rights, and gender equality. Journal of Human Rights and Social Work, 8(4), 359–360. https://doi.org/10.1007/s41134-023-00288-7</li>
+
+	    <h3></h3>
+	    <p> POV's: </p>
+	    <li> How men & women see gender equality differently. (2024, September 10). World Economic Forum. https://www.weforum.org/agenda/2015/02/how-men-and-women-see-gender-equality-differently/</li>
+
+	    <h3></h3>
+	    <p> Solutions: </p>
+	    <li> 27 actionable ways to improve gender equality | Kiva. (n.d.). Kiva. https://www.kiva.org/blog/27-actionable-ways-to-improve-gender-equality</li>
+    
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>©2024 Egalitarianism Hub. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

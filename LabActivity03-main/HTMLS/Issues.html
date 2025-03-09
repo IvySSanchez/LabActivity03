@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egalitarianism Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, sans-serif;
+            background-color: #f0e5cf;
+            background-origin: padding-box;
+            color: #3c3c3c;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f2833;
+            color: #66fcf1;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease; 
+        }
+
+        header .logo:hover {
+            transform: scale(1.05);
+            color: #45a29e;
+        }
+
+        header .logo img {
+            width: 85px; 
+            height: auto; 
+            margin-right: 10px;
+            transition: transform 0.5s ease; 
+        }
+
+        header .logo img:hover {
+            transform: rotate(360deg);
+        }
+
+        img[src^="../IMAGES/"] {
+            border: 2px solid blue;
+        }
+
+        nav {
+            background-color: #45a29e;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            position: relative; 
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative; 
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            color: #1f2833;
+            background-color: #66fcf1;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #1f2833;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(1);
+        }
+
+        .dropdown {
+            display: none; 
+            position: absolute;             
+            background-color: #34495e; 
+            min-width: 220px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1; 
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown p {
+            color: white; 
+            margin: 0; 
+            padding: 5px 0; 
+            text-align: justify;
+        }
+
+        .dropdown a {
+            display: block; 
+            color: white; 
+            padding: 8px 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown a:hover {
+            background-color: #e67e22;
+            transform: translateX(10px);
+            border-radius: 5px;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+            transform: translateY(5px);
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .content h3 {
+            margin: 15px 0;
+            font-size: 2em;
+            color: #1f2833;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+
+        footer {
+            background-color: #1f2833;
+            color: #66fcf1;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        footer:hover {
+            background-color: #2c3e50;
+            color: #45a29e;
+        }
+
+        .sprite {
+            width: 24px; 
+            height: 24px;
+            margin: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .sprite:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo"> 
+            Egalitarianism Hub
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="../Egalitarianism Hub.html">Home</a></li>
+            <li><a>About</a>
+                <div class="dropdown">
+                    <p>This website is dedicated to raising awareness about gender equality issues and promoting solutions for a more equitable society.</p>
+                </div>
+            </li>
+            <li>
+                <a>Features</a>
+                <div class="dropdown">
+                    <a href="../HTMLS/Issues.html">Issues</a>
+                    <a href="../HTMLS/Articles.html">Articles</a>
+                    <a href="../HTMLS/POV's.html">POV's</a>
+                    <a href="../HTMLS/Solutions.html">Solutions</a>
+                    <a href="../HTMLS/References.html">References</a>
+                    <a href="../HTMLS/Quiz.html">Quiz</a>
+                </div>
+            </li>
+            <li>
+                <a>Contact</a>
+                <div class="dropdown">
+                    <a>Email: ivygrace.sanchez@smc.pshs.edu.ph</a>
+                    <a>Phone: +63 (998) 546-0128</a>
+                    <a href="https://www.facebook.com/iv.sanchezz" target="blank">
+                        <img src="../IMAGES/facebook.png" alt="Facebook" class="sprite">
+                    </a>
+                    <a href="https://www.instagram.com/iv.sanchezz" target="_blank">
+                        <img src="../IMAGES/instagram.png" alt="Instagram" class="sprite">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="content">
+        <img src="../images/issues.png" alt="Issues"> 
+        <audio controls>
+            <source src="../AUDIOS/rally.mp3" type="audio/mp3">
+        </audio>
+        <h3>Issues</h3>
+        <p>#1. Education access</p>
+        <p>The world has made significant progress in ensuring education access. Globally, girls have either closed or reversed gaps in accessing and completing education. Certain areas are still far behind and there’s still gender inequality among adults. Adult women are more likely to be illiterate compared to men. In sub-Saharan Africa, more than 1 in 4 young women can’t read. COVID-19 likely had a negative impact, but specific data is still being collected and analyzed. Education is crucial for gender equality and the success of nations. A World Bank study estimated that when girls aren’t educated, it can cost countries $15-$30 trillion in lost lifetime productivity and earnings.</p>
+
+        <p>#2. Maternal death rate</p>
+        <p>Maternal death rate (also known as maternal mortality) refers to deaths caused by complications from pregnancy or childbirth. There was significant progress between 2000-2017. The global maternal death rate decreased by 38%. There’s still a long way to go, especially since deaths are mostly preventable. Among the wealthiest countries, the United States in particular needs to take action. The CDC recently released maternal mortality stats for 2020, revealing that deaths had increased from 2019. Black women are three times more likely to die than white women. Overall, the United States’ maternal mortality rate is almost three times higher than France, which has the next highest death rate. Maternal death has a huge impact on families and society. In 2014, a study in three sub-counties in Western Kenya found that when a mother dies in pregnancy or childbirth, it triggers a wave of harm affecting her children, their education, the family’s health, and more.</p>
+
+        <p>#3. Abortion and birth control access</p>
+        <p>Access to family planning resources (which include abortion and birth control) is essential to a person’s bodily autonomy. Access is also critical for the health, well-being, and economic prosperity of families, communities, and nations. At the time of writing, there are 24 countries or territories that prohibit abortion for any reason. At least 75 countries allow abortion on request with gestational limits. When the United States Supreme Court overturned Roe v. Wade in 2022, it joined just three countries (Poland, Nicaragua, and El Salvador) that have gone backward on abortion rights since 1994. Experts worry that states banning abortion will come for birth control like Plan B and IUDs next. Reproductive rights like abortion and birth are gendered, but it’s important to remember restrictions threaten everyone’s freedom.</p>
+
+        <p>#4. Informal employment</p>
+        <p>The informal economy is a sector of the economy that isn’t monitored or taxed. It forms a large part of developing countries, and while it provides work and wages, it’s much less secure or safe. The International Labor Organization estimates that around 60% of the world’s labor force works (at least part-time) in the informal economy. Why is this a gender issue? In low-income countries, 92.1% of employed women work in the informal economy compared to 87.5% of employed men. When the pandemic hit, women’s employment suffered the most. As an example, home-based workers earned 2% of their median pre-pandemic income in the middle of 2021 while in sub-Saharan Africa, 41% of women-owned businesses closed (compared to 34% of businesses owned by men). By supporting those in informal employment, countries can make progress on gender inequality.</p>
+
+        <p>#5. Unpaid labor</p>
+        <p>Unpaid labor includes childcare, cleaning, cooking, and caring for older family members. Globally, women spend about 3.2 times more time on unpaid work than men. No country on the planet splits this work evenly. While unpaid labor often fills in social service gaps, keeps families afloat, and supports economies, unpaid labor isn’t valued. Women are simply expected to sacrifice their time – which they could use to work for pay or pursue education – without compensation. This can keep families locked in cycles of poverty and fuel gender inequality. Countries can change things by legislating more paid leave, investing in high-quality childcare, offering child tax credits, and more. These solutions will primarily help women because they do so much unpaid labor, but it’s good for other caregivers, families, and children, too.</p>
+
+        <p>#6. The gender pay gap</p>
+        <p>The gender pay gap is one of the best-known gender issues, but progress has been slow. Globally, the World Bank estimates that about 2.4 billion women of working age don’t get equal economic opportunities compared to men. The amount of unpaid labor put on women is a big reason why, but many countries aren’t paying women as much as men. The World Bank also found that just 95 of the surveyed 190 economies mandate equal pay for equal work for men and women. In the United States, eliminating the gender pay gap could halve the poverty rate for all working women.</p>
+
+        <p>#7. Gender-based violence</p>
+        <p>Gender-based violence (GBV) is a persistent issue infecting the entire world. According to the World Health Organization, 30% of women will be subjected to physical and/or sexual violence in their lifetimes. 38% of murdered women are killed by their intimate partners. Crises like the COVID-19 pandemic and war increase gender
+
+        <p>#8. Political representation</p>
+        <p>Men hold most of the world’s power. According to UN Women data from September 2022, there were 28 countries where 30 women served as Heads of State and/or Government. At this rate, it will take another 130 years to reach gender equality in the highest positions of power. Lower levels aren’t much better. Worldwide, women remain underrepresented at all levels of decision-making. Representation of trans people is also essential to gender equality worldwide.</p>
+    
+        <p>#9. Transphobia</p>
+        <p>Because of transphobia, trans people face increased levels of violence and discrimination worldwide. In the US’ largest study of transgender and gender non-conforming people, 28% reported harassment in healthcare settings. In 2020, Human Rights Watch tracked a record number of violent attacks against transgender and gender non-conforming people. The real numbers are most likely higher as most harassment and violence are never reported. In the US, bills targeting trans youth have been piling up. Unless transphobia is addressed, things will only get worse.</p>
+    
+        <p>#10. Human trafficking</p>
+        <p>Human trafficking affects all genders, but not in the same ways. Women and girls made up 60% of all victims in 2020. They’re also three times more likely to experience extreme violence. The share of male victims has been increasing. This is most likely because forced labor is becoming more common and more men and boys are trafficked for this purpose. Gender norms about masculinity and exploitation play a role in identification; many men don’t call themselves human trafficking victims. When dealing with human trafficking, it’s important to understand the gendered dynamics.</p>
+    
+        <p>#11. Racialized gender</p>
+        <p>The term “racialized gender” refers to how race intersects with gender. While white women face gender discrimination, their whiteness shields them from oppression doled unto women of color. This changes the nature of the gender equality fight as Black women, Latina women, Indigenous women, Asian women, etc, face different barriers and increased (and often sexualized) violence. Recognizing these differences, as well as the prevalence of racism within white feminism movements, is important.</p>
+    
+        <p>#12. Mental health</p>
+        <p>Mental health and mental illnesses are complex, but there do seem to be differences when it comes to gender. Women are more likely to report depression and anxiety, although men could be hiding their mental health struggles due to societal biases about masculinity. Women are more likely to attempt suicide while men are four times more likely (in the United States) to successfully end their own lives. This could be because men tend to choose more violent, lethal methods. Researchers are still untangling the mysteries about mental health, but it’s clear gender plays a role.</p>
+    
+        <p>#13. Online radicalization</p>
+        <p>In the past decade or so, several young men have carried out mass shootings. Many of them have something in common: they were radicalized online. Experts are raising the alarm about these toxic online spaces, which target lonely men and boys as young as middle school. Organized networks of anti-feminist, racist influencers congregate where they know boys hang out (like gaming websites) and seed hateful, violent rhetoric and beliefs. Algorithms also play a role in pulling young men deeper and deeper down the rabbit hole. Parents, educators, and schools need to learn to recognize warning signs and intervene before beliefs turn into violence.</p>
+    
+        <p>#14. Climate change</p>
+        <p>Change affects men and women differently. In areas where climate change’s effects are most powerful, women are usually the ones who collect food, water, and fuel. If male family members need to leave home for work, women and girls take on even more unpaid labor, which is made more difficult by climate change. According to recent forecasts, 62.8% of the world’s poorest women live in sub-Saharan Africa, which is also the region most vulnerable to climate change. While climate change doesn’t discriminate based on gender, its effects are not proportionate. Gender equality is key to fighting climate change.</p>
+    
+        <p>#15. Discriminatory laws</p>
+        <p>Many of the world’s gender issues have roots in the law. According to the World Bank’s Women, Business, and the Law report, on average women get about ¾ of the same legal rights as men. The report uses eight indicators to measure women’s “interactions with the law” throughout their careers: Mobility, Workplace, Pay, Marriage, Parenthood, Entrepreneurship, Assets, and Pension. There’s been some progress as 23 economies made reforms. However, 46 economies still don’t have legislation on sexual harassment in the workplace. 89 economies also need legal reforms to improve women’s agency and decision-making within marriage. Laws aren’t a magic bullet, but they’re an essential foundation for better gender equality</p>
+    
+        </div>
+    </section>
+    
+        <!-- Footer -->
+        <footer>
+            <p>©2024 Egalitarianism Hub. All Rights Reserved.</p>
+        </footer>
+    
+    </body>
+</html>
